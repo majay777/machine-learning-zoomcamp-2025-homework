@@ -10,7 +10,8 @@ COPY "pyproject.toml" "uv.lock" ".python-version" ./
 
 RUN uv sync --locked
 
-COPY "question-4.py"  "pipelilne_v1.bin"./
+COPY "question-4.py"  "pipeline_v1.bin" "question-04-request.py" ./
+
 
 EXPOSE 9696
 
